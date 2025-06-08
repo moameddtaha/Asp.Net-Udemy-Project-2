@@ -55,6 +55,16 @@ builder.Services.AddVersionedApiExplorer(options =>
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("Default")));
 
+// CORS: localhost:4200
+builder.Services.AddCors(options =>
+{
+    options.AddDefaultPolicy(builder =>
+    {
+        builder.WithOrigins("http://localhost:4200");
+    });
+
+});
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -72,6 +82,8 @@ if (app.Environment.IsDevelopment())
 app.UseHsts();
 
 app.UseHttpsRedirection();
+
+app.UseCors(); // Enables CORS policy defined above
 
 app.UseAuthorization();
 

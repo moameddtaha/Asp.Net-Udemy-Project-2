@@ -55,14 +55,24 @@ builder.Services.AddVersionedApiExplorer(options =>
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("Default")));
 
-// CORS: localhost:4200
+// CORS: localhost:4200, localhost:4100
 builder.Services.AddCors(options =>
 {
-    options.AddDefaultPolicy(builder =>
+    options.AddDefaultPolicy(Policybuilder =>
     {
-        builder.WithOrigins("http://localhost:4200");
+        Policybuilder
+        .WithOrigins(builder.Configuration.GetSection("AllowedOrigins").Get<string[]>())
+        .WithHeaders("Content-Type", "Authorization", "Origin", "Accept") // Allows specific headers
+        .WithMethods("GET", "POST", "PUT", "DELETE", "OPTIONS"); // Allows specific HTTP methods
     });
 
+    options.AddPolicy("4100Client", Policybuilder =>
+    {
+        Policybuilder
+        .WithOrigins(builder.Configuration.GetSection("AllowedOrigins2").Get<string[]>())
+        .WithHeaders("Authorization", "Origin", "Accept") // Allows specific headers
+        .WithMethods("GET"); // Allows specific HTTP methods
+    });
 });
 
 var app = builder.Build();

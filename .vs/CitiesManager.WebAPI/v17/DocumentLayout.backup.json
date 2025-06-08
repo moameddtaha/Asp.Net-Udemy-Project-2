@@ -36,7 +36,7 @@
               "RelativeDocumentMoniker": "CitiesManager.WebAPI\\Program.cs",
               "ToolTip": "C:\\Users\\moham\\Desktop\\CitiesManager.WebAPI\\CitiesManager.WebAPI\\Program.cs",
               "RelativeToolTip": "CitiesManager.WebAPI\\Program.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAmwEYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACsAAAAAAAAAAAAmwFwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-06T21:32:56.564Z",
               "IsPinned": true,
@@ -52,8 +52,7 @@
               "RelativeToolTip": "CitiesManager.WebAPI\\Controllers\\CustomControllerBase.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-08T15:45:50.366Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-08T15:45:50.366Z"
             },
             {
               "$type": "Document",
@@ -65,8 +64,7 @@
               "RelativeToolTip": "CitiesManager.WebAPI\\Controllers\\v1\\CitiesController.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-08T15:40:11Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-08T15:40:11Z"
             },
             {
               "$type": "Document",
@@ -78,8 +76,7 @@
               "RelativeToolTip": "CitiesManager.WebAPI\\Controllers\\v2\\CitiesController.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-08T15:39:39.398Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-08T15:39:39.398Z"
             }
           ]
         }
